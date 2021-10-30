@@ -1,0 +1,133 @@
+body{
+	background-color:  #F5D693;
+}
+/*#4BDAFF 
+#9CE2F3
+#a8ecfc
+*/
+.container{
+	position: relative;
+	width: calc(100% - 100px);
+	min-height: calc(100vh - 280px);
+	min-height: 300px;
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px;
+}
+
+.content{
+	transform: translateX(-100px);
+	
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 20px;
+	backdrop-filter:  blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	padding: 40px;
+	padding-left:110px ;
+
+}
+.content h2{
+	font-size: 3em;
+	color: #a24350;
+	padding: 20px;
+
+}
+
+.content p{
+	font-size: 1.2em;
+	color: #a24350;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color:#F7DCB0 ;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  border-radius: 22px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color:  #F1C872;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.papas {
+  padding: 0 80px;
+  margin: 10px;
+  display: none;
+  overflow: hidden;
+  background-color: #ffeccc;
+}
+.papas h3{
+	font-size: 30px;
+	color: #DC7583 ;
+}
+a{
+	color: black;
+	outline: none;
+	text-decoration: none;
+	padding: 8px 15px;
+	font-weight: 500;
+	border-radius: 20px;
+	font-size: 25px;	
+}
+a:hover{
+	background:#F1C872;
+	box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 1200px)
+{
+	.container
+	{
+		position: relative;
+		width: calc(100% - 20px);
+
+	}
+}
+
+@media (max-width: 992px)
+{
+	section
+	{
+		padding: 50px 10px 10px;        
+	}
+	.container{
+		flex-direction: column;
+		height: auto;
+		padding: 20px;
+	}
+
+	.container .content{
+		transform: translateX(0px);
+		max-width: 100%;
+		padding: 30px;
+		margin-top: -40px;
+	}
+}
+
+@media (max-width : 600px)
+{
+	.content
+	{
+		font-size: 1em;
+	}
+	.content p
+	{
+		font-size: 1em;
+	}
+}

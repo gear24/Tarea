@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pomodoro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/pomodoro.css" />
+  </head>
+  <body>
+    <div class="pomodoro-container">
+      <div class="timer-display"></div>
+      <ul class="button-group">
+        <li class="start button">
+          <i class="fa fa-play start" aria-hidden="true"></i>
+        </li>
+        <li class="pause button">
+          <i class="fa fa-pause pause" aria-hidden="true"></i>
+        </li>
+        <li class="stop button">
+          <i class="fa fa-stop stop" aria-hidden="true"></i>
+        </li>
+      </ul>
+      <div class="session-type"></div>
+      <div class="task-section">
+        <h4>Sesiones Totales</h4>
+        <p class="task-list">Trabajo : <span class="work-sessions"></span></p>
+        <p class="task-list">Descanso : <span class="break-sessions"></span></p>
+        <a href="main.html" style="color: #fff;">Regresar</a>
+      </div>
+    </div>
+    <script src="js/pomodoro.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
